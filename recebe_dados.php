@@ -11,7 +11,15 @@
 
             $erro = 0;
             if(empty($nome) OR strstr($nome, " ") == FALSE){
-                echo "Preencha seu nome com sobrenome";
+                echo "Preencha seu nome com sobrenome.<br>";
+                $erro = 1;
+            }
+            if(is_numeric($idade) == FALSE){
+                echo "Favor, digitar um número no campo idade.<br>";
+                $erro = 1;
+            }
+            if(strlen($email) < 8 || strstr($email, "@") == FALSE){
+                echo "Favor, digitar o e-mail com pelo menos 8 caracteres.<br>";
                 $erro = 1;
             }
             

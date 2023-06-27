@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Formulário Extra</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="recebe_dados_extra.php" method="POST">
+            <p>
+                Nome: <input type="text" name="nome" size="30" placeholder="Digite seu nome e sobrenome">
+            </p>
+            <p>
+                E-Mail: <input type="text" name="email" size="40" placeholder="Digite seu e-mail">
+            </p>
+            <p>
+                Data de nascimento: <input type="text" name="dt_nasc" size="10" placeholder="Digite sua data de nascimento">
+            </p>
+            <p> Cartão de crédito:
+                <select name="cartao">
+                    <option value="">Escolha a bandeira do cartão</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Maestro">Maestro</option>
+                    <option value="Elo">Elo</option>
+                </select>
+            </p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </body>
+</html>
+<html>
